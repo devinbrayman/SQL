@@ -1,0 +1,23 @@
+Create Table Mini_Bar (id integer, product TEXT, price REAL, quantity INTEGER, happy_hour TEXT);
+INSERT INTO Mini_Bar VALUES (1, "Budweiser", 4.25, 67, "Yes");
+INSERT INTO Mini_Bar VALUES (2, "Bud Light", 4.25, 148, "Yes");
+INSERT INTO Mini_Bar VALUES (3, "Bud Light Lime", 4.25, 36, "Yes");
+INSERT INTO Mini_Bar VALUES (4, "Yeungling", 4.25, 52, "Yes");
+INSERT INTO Mini_Bar VALUES (5, "Mich Ultra", 4.75, 104, "Yes");
+INSERT INTO Mini_Bar VALUES (6, "Miller Light", 4.25, 39, "Yes");
+INSERT INTO Mini_Bar VALUES (7, "Coors Light", 4.25, 41, "Yes");
+INSERT INTO Mini_Bar VALUES (8, "Heiniken", 5.50, 15, "No");
+INSERT INTO Mini_Bar VALUES (9, "Corona", 5.50, 8, "No");
+INSERT INTO Mini_Bar VALUES (10, "Coors Banquet", 5.00, 14, "No");
+INSERT INTO Mini_Bar VALUES (11, "PBR", 5.00, 26, "No");
+INSERT INTO Mini_Bar VALUES (12, "Natty Light", 1.00, 235, "No");
+INSERT INTO Mini_Bar VALUES (13, "White Claw", 5.00, 42, "No");
+INSERT INTO Mini_Bar VALUES (14, "Smirnoff Ice", 5.25, 25, "No");
+INSERT INTO Mini_Bar VALUES (15, "Smirnoff Screwdriver", 5.25, 35, "No");
+
+
+Ordering products by price low to high
+SELECT * FROM Mini_Bar ORDER BY price;
+
+Selecting products needing restock- items with quantity under 50
+SELECT * FROM Mini_Bar WHERE quantity < 50;
